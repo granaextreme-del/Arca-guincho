@@ -19,138 +19,216 @@
         }
         
         header {
-            background: #2c3e50;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .logo span {
-            color: #f39c12;
-        }
-        
-        nav {
-            background: #1a252f;
-            padding: 10px;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placehold.co/600x400?text=Serviço+Guincho');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imagens/fundo-guincho.jpg');
             background-size: cover;
+            background-position: center;
             color: white;
             padding: 50px 20px;
             text-align: center;
         }
         
-        .hero h1 {
-            font-size: 28px;
-            margin-bottom: 15px;
+        .logo {
+            margin-bottom: 20px;
         }
         
-        .btn {
-            display: inline-block;
-            background: #e74c3c;
+        .logo img {
+            height: 80px;
+        }
+        
+        nav {
+            background: #1a252f;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        nav a {
             color: white;
-            padding: 12px 25px;
-            margin: 10px 5px;
-            border-radius: 5px;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
         }
         
-        .btn-whatsapp {
-            background: #25D366;
+        .botoes {
+            margin-top: 30px;
+        }
+        
+        .botao {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .botao:hover {
+            background: #c0392b;
         }
         
         section {
-            padding: 30px 20px;
-        }
-        
-        .container {
-            max-width: 1000px;
+            padding: 50px 20px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
         h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: #2c3e50;
         }
         
-        .services {
-            background: white;
+        .servicos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
         
-        .service {
-            background: #ecf0f1;
+        .servico {
+            background: white;
             padding: 20px;
-            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+        
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .galeria img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .video-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        video {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
             border-radius: 5px;
         }
         
-        .about {
-            background: #f9f9f9;
-        }
-        
-        .contact {
+        button {
             background: #2c3e50;
             color: white;
-        }
-        
-        .contact-info {
-            margin-bottom: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
         }
         
         footer {
-            background: #1a252f;
+            background: #2c3e50;
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Arca <span>Guincho</span></div>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#services">Serviços</a>
-            <a href="#about">Sobre</a>
-            <a href="#contact">Contato</a>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
+        <div class="logo">
+            <img src="imagens/logo-arca.png" alt="Arca Guincho">
+        </div>
         <h1>Arca Guincho - Atendimento Imediato 24h</h1>
         <p>Atendimento rápido e seguro em Uberlândia e região</p>
-        <div>
-            <a href="tel:6191984639" class="btn">Ligar Agora</a>
-            <a href="https://wa.me/556191984639" class="btn btn-whatsapp">WhatsApp</a>
+        <div class="botoes">
+            <a href="tel:+5534999999999" class="botao">📞 Ligar Agora</a>
+            <a href="https://wa.me/5534999999999" class="botao">💬 WhatsApp</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos">
+            <div class="servico">
+                <h3>Reboque de Carros</h3>
+                <p>Serviço especializado para todos os tipos de veículos</p>
+            </div>
+            <div class="servico">
+                <h3>Reboque de Motos</h3>
+                <p>Transporte seguro para motocicletas</p>
+            </div>
+            <div class="servico">
+                <h3>Transporte para Oficina</h3>
+                <p>Leve seu veículo para oficinas especializadas</p>
+            </div>
         </div>
     </section>
 
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="service">
-                <h3>Reboque de Carros e Motos</h3>
-                <p>Serviço especializado para todos os tipos de veículos, com segurança e agilidade.</p>
-            </div>
-            <div class="service">
-                <h3>Transporte até Oficina</h3>
-                <p>Levamos seu veículo para a oficina de sua preferência com todo cuidado necessário.</p>
-            </div>
-            <div class="service">
-                <h3>Socorro Eme
+    <section id="galeria">
+        <h2>Serviços Executados</h2>
+        <div class="galeria">
+            <img src="imagens/servico1.jpg" alt="Serviço 1">
+            <img src="imagens/servico2.jpg" alt="Serviço 2">
+            <img src="imagens/servico3.jpg" alt="Serviço 3">
+            <img src="imagens/servico4.jpg" alt="Serviço 4">
+        </div>
+    </section>
+
+    <section>
+        <h2>Nosso Trabalho em Ação</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="videos/atendimento.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="tel" placeholder="Seu telefone" required>
+            <input type="email" placeholder="Seu e-mail">
+            <textarea placeholder="Como podemos ajudar?" rows="5"></textarea>
+            <button type="submit">Solicitar Orçamento</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Arca Guincho &copy; 2024 - Atendimento 24 horas</p>
+        <p>Uberlândia e região</p>
+    </footer>
+</body>
+</html>
