@@ -5,135 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arca Guincho - Atendimento 24h</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f5f5f5; color: #333; line-height: 1.6; }
         
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imagens/fundo-guincho.jpg');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #2c3e50;
             color: white;
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         
-        .logo {
-            margin-bottom: 20px;
-        }
-        
-        .logo img {
-            height: 80px;
-        }
+        .logo img { height: 60px; margin-bottom: 15px; }
         
         nav {
             background: #1a252f;
-            padding: 15px;
+            padding: 12px;
             text-align: center;
         }
         
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
             font-weight: bold;
+            display: inline-block;
+            padding: 5px;
         }
         
-        .botoes {
-            margin-top: 30px;
-        }
+        .botoes { margin-top: 25px; }
         
         .botao {
             display: inline-block;
             background: #e74c3c;
             color: white;
-            padding: 15px 30px;
-            margin: 0 10px;
+            padding: 12px 20px;
+            margin: 8px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: background 0.3s;
         }
         
-        .botao:hover {
-            background: #c0392b;
-        }
-        
-        section {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #2c3e50;
-        }
+        section { padding: 30px 20px; max-width: 1000px; margin: 0 auto; }
+        h2 { text-align: center; margin-bottom: 25px; color: #2c3e50; }
         
         .servicos {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
         }
         
         .servico {
             background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
             text-align: center;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
         }
         
         .galeria {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
             margin-top: 20px;
         }
         
         .galeria img {
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             height: 200px;
-            object-fit: cover;
             border-radius: 8px;
         }
         
         .video-container {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 25px;
         }
         
         video {
-            max-width: 100%;
-            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
         }
         
         form {
-            max-width: 600px;
-            margin: 0 auto;
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 0 auto;
+            max-width: 500px;
         }
         
         input, textarea {
             width: 100%;
             padding: 12px;
-            margin: 10px 0;
+            margin: 8px 0;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
@@ -141,11 +109,12 @@
         button {
             background: #2c3e50;
             color: white;
-            padding: 15px 30px;
+            padding: 15px;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
+            width: 100%;
             font-weight: bold;
+            margin-top: 10px;
         }
         
         footer {
@@ -153,7 +122,7 @@
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 50px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -171,9 +140,8 @@
     </header>
 
     <nav>
-        <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
-        <a href="#galeria">Galeria</a>
+        <a href="#galeria">Fotos</a>
         <a href="#contato">Contato</a>
     </nav>
 
@@ -181,15 +149,15 @@
         <h2>Nossos Serviços</h2>
         <div class="servicos">
             <div class="servico">
-                <h3>Reboque de Carros</h3>
+                <h3>🚗 Reboque de Carros</h3>
                 <p>Serviço especializado para todos os tipos de veículos</p>
             </div>
             <div class="servico">
-                <h3>Reboque de Motos</h3>
+                <h3>🏍️ Reboque de Motos</h3>
                 <p>Transporte seguro para motocicletas</p>
             </div>
             <div class="servico">
-                <h3>Transporte para Oficina</h3>
+                <h3>🔧 Transporte para Oficina</h3>
                 <p>Leve seu veículo para oficinas especializadas</p>
             </div>
         </div>
@@ -201,7 +169,6 @@
             <img src="imagens/servico1.jpg" alt="Serviço 1">
             <img src="imagens/servico2.jpg" alt="Serviço 2">
             <img src="imagens/servico3.jpg" alt="Serviço 3">
-            <img src="imagens/servico4.jpg" alt="Serviço 4">
         </div>
     </section>
 
@@ -220,15 +187,14 @@
         <form>
             <input type="text" placeholder="Seu nome" required>
             <input type="tel" placeholder="Seu telefone" required>
-            <input type="email" placeholder="Seu e-mail">
-            <textarea placeholder="Como podemos ajudar?" rows="5"></textarea>
-            <button type="submit">Solicitar Orçamento</button>
+            <textarea placeholder="Como podemos ajudar?" rows="4"></textarea>
+            <button type="submit">📨 Solicitar Orçamento</button>
         </form>
     </section>
 
     <footer>
-        <p>Arca Guincho &copy; 2024 - Atendimento 24 horas</p>
-        <p>Uberlândia e região</p>
+        <p>© 2024 Arca Guincho - Atendimento 24 horas</p>
+        <p>📞 Uberlândia e região</p>
     </footer>
 </body>
 </html>
